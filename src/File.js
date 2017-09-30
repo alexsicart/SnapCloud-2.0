@@ -34,9 +34,11 @@ class Basic extends React.Component {
   handleClick = () => {
     console.log(this.state.files[0]);
     this.state.client.seed(this.state.files[0], (torrent) => {
+      console.log('torrent', torrent);
       torrent.files[0].getBuffer((err, buffer) => {
         this.state.node.files.add(buffer, function(err, files) {
           alert('https://ipfs.io/ipfs/' + files[0].hash);
+          console.log('https://ipfs.io/ipfs/' + files[0].hash);
       })
     })
     })
