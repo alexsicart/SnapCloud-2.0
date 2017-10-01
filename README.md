@@ -1,4 +1,4 @@
-# Decentralized-Cloud
+# Decentralized-Cloud 2.0 (React)
 
 ## Description
 Decentralized Cloud is the simplest way to send your files around the world using the InterPlanetary File System.
