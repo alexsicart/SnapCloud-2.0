@@ -1,17 +1,17 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
 
-import IPFS from 'ipfs';
 import Buffer from 'buffer';
 import webtorrent from 'webtorrent';
 
+import Ipfs from 'ipfs';
 
 class Basic extends React.Component {
   constructor() {
     super()
     this.state = {
       files: [],
-      node:  new IPFS({
+      node:  new Ipfs({
         repo: String(Math.random() + Date.now())
       }),
       client: new webtorrent(),
